@@ -326,6 +326,77 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+a.project-item {
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+@media (min-width: 769px) {
+    a.project-item {
+        width:50%;
+        float: left
+    }
+}
+
+a.project-item:hover .project-overlay {
+    opacity: .7
+}
+
+a.project-item:hover .project-text {
+    top: 50%;
+    opacity: 1
+}
+
+a.project-item:hover .project-text h2:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+@media (max-width: 768px) {
+    a.project-item .project-overlay {
+        opacity:.7
+    }
+
+    a.project-item .project-text {
+        top: 50%;
+        opacity: 1
+    }
+}
+        #div1{
+            height:300px;
+            width:300px;
+            background-color:red;
+            margin:0;
+            }
+        #div2{
+            height:300px;
+            width:300px;
+            background-color:green;
+            position:relative;
+            left:320px;
+            bottom:300px;
+            }
+         #div3{
+            height:300px;
+            width:300px;
+            background-color:yellow;
+            position:relative;
+            bottom:280px;
+            }
+        #div4{
+            height:300px;
+            width:300px;
+            background-color:blue;
+            position:relative;
+            left:320px;
+            bottom:580px;
+            }
+
 
 /* Row */
 
