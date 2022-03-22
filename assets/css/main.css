@@ -367,37 +367,23 @@ a.project-item:hover .project-text h2:after {
         opacity: 1
     }
 }
-        #div1{
-            height:300px;
-            width:300px;
-            background-color:red;
-            margin:0;
-            }
-        #div2{
-            height:300px;
-            width:300px;
-            background-color:green;
-            position:relative;
-            left:320px;
-            bottom:300px;
-            }
-         #div3{
-            height:300px;
-            width:300px;
-            background-color:yellow;
-            position:relative;
-            bottom:280px;
-            }
-        #div4{
-            height:300px;
-            width:300px;
-            background-color:blue;
-            position:relative;
-            left:320px;
-            bottom:580px;
-            }
+ {
+  box-sizing: border-box;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Row */
 
 	.row {
